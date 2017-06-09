@@ -4,11 +4,6 @@ MAINTAINER Johnie Hjelm <johnie.hjelm@cloudnine.se>
 # Add the Dotdeb repo
 RUN apt-get update
 RUN apt-get install -y curl wget unzip
-RUN echo "deb http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list.d/dotdeb.list
-RUN echo "deb-src http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list.d/dotdeb.list
-RUN wget https://www.dotdeb.org/dotdeb.gpg
-RUN apt-key add dotdeb.gpg
-RUN apt-get update
 
 # Installing PHP 7
 RUN apt-get install -y php7.0-fpm php7.0-cli php7.0-mysql php7.0-curl php7.0-gd php7.0-mcrypt php7.0-xdebug php7.0-memcache php7.0-memcached
