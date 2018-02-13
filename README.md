@@ -2,9 +2,9 @@
 
 Virtual development environment for **Wordpress** using Docker. This project runs on:
 
-- PHP 7
+- PHP ^7
 - MariaDB, latest version
-- Wordpress 4.6.1
+- Wordpress ^4.9
 
 ## Dependencies
 
@@ -34,11 +34,9 @@ After all the dependencias are installed, follow the setup process below:
 * Clone the project repository.
 * Go the repository folder and enter the command `docker-compose up -d`.
 * The website source can be found in the folder `www/`.
-* The website will be accessible throught the URL `http://wordpress.dev` or the specified url in the file `servername.env`. (Don't forget to update your `/etc/hosts`-file)
+* The website will be accessible throught the URL `http://wordpress.test` or the specified url in the file `servername.env`. (Don't forget to update your `/etc/hosts`-file)
 * The website database (MariaDB) will be accessible through the linked images network / the `MARIADB_PORT_3306_TCP_ADDR` variable.
 * Enter the command `docker-compose down` in the repository folder when you want to stop the virtual server.
-
-## Credentials
 
 ## Credentials
 
@@ -61,4 +59,4 @@ After all the dependencias are installed, follow the setup process below:
 
 Authors: 
 
-- Johnie Hjelm (johnie.hjelm@cloudnine.se)
+- Johnie Hjelm (j@hjelm.im)
